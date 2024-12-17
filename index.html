@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+    <link rel="shortcut icon" href="img/pendencia.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+
+        <header>
+            <img src="img/pendencia.png" alt="">
+            <h2>ista de tarefas</h2>
+        </header>
+
+        <div id="box-opcoes">
+
+            <div class="opcoes">Em Andamento <img src="img/trabalho-duro-do-usuario.png" alt=""></div>
+            <div class="opcoes">Concluídas  <img src="img/correto.png" alt="">  </div>
+
+        </div>
+
+        <div id="box-tarefas">
+
+            <div id="box-scroll-tarefas">
+
+                <!-- <div id="box-info">
+                    <img src="img/erro.png" alt="">
+                    <h4>Você não tem tarefas em andamento</h4>
+                </div> -->
+                
+
+                <div class="box-lista-tarefas" id="item-01">
+
+                </div>
+            
+                <div class="box-lista-tarefas" id="item-02"></div>
+                
+            </div>
+        </div>
+
+        <div id="menu">
+            <button id="btn-adicionar">
+                <img src="img/botao-adicionar.png" alt="">    
+            </button>
+        </div>
+
+        <div id="box-adicionar">
+            <input type="text" id="input-tarefa">
+            <button id="btn-cancelar">Cancelar</button>
+            <button id="btn-confirmar">Adicionar</button>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

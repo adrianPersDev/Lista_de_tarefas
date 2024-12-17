@@ -1,0 +1,247 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'calibri';
+}
+
+body{
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+main{
+    height: 90%;
+    width: 500px;
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 10px 5px gray; */
+    background-color: rgb(230, 230, 230);
+    overflow: hidden;
+}
+
+header{
+    background-color: rgb(93, 121, 173);
+    height: 10%;
+    box-shadow: 0px 1px 5px 0px gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 200%;
+    /* z-index: 2; */
+}
+
+header img{
+    height: 70%;
+}
+
+#box-opcoes{
+    height: 10%;
+    display: flex;
+    background-color: rgb(78, 146, 205);
+
+   
+}
+
+.opcoes{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.opcoes img{
+    width: 10%;
+    margin-left: 5%;
+}
+
+#box-tarefas{
+    height: 70%;
+    width: 100%;
+}
+
+#box-scroll-tarefas{
+    height: 100%;
+    width: 200%;
+    display: flex;
+}
+
+.box-lista-tarefas{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 1s;
+    overflow-y: scroll;
+    scrollbar-width: 0px;
+}
+
+#box-info{
+    height: 30%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#box-info *{
+    margin: auto;
+}
+
+#box-info img{
+    height: 80%;
+}
+
+.tarefa{
+    width: 80%;
+    height: 10%;
+    border-radius: 5px;
+    margin-block: 1%;
+    background-color: rgb(132, 169, 195);
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    justify-content: space-around;
+}
+
+
+.tarefa h3{
+    width: 60%;
+}
+
+.tarefa button {
+    width: 5vh;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.tarefa button img {
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+    transition: 0.5s;
+}
+
+.tarefa button img:hover{
+    transform: scale(1.2);
+}
+
+.tarefa:hover{
+    transform: scale(1.05);
+}
+
+
+#menu{
+    background-color: rgb(84, 116, 158);
+    height: 10%;
+    width: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    justify-content: space-evenly;
+}
+
+#menu button{
+    background-color: rgba(106, 138, 226, 0.582);
+    height: 7dvh;
+    width: 7dvh;
+    border-radius: 50%;
+    border-width: 0px;
+    transition: 0.5s;
+}
+
+
+#menu button:hover{
+    transform: scale(1.1);
+}
+
+#menu button img{
+
+    width: 100%;
+    padding: 5%;
+
+}
+
+#box-adicionar{
+    position: relative;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    top: 0%;
+    height: 20%;
+    /* width: 100%; */
+    background-color: rgb(100, 174, 182);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#input-tarefa{
+    width: 90%;
+    height: 40%;
+    background-color: transparent;
+    padding-inline: 2%;
+    border: solid 2px gray;
+    outline: none;
+    border-radius: 5px;
+    font-size: 175%;
+    
+}
+
+#input-tarefa:hover, #input-tarefa:focus{
+    border-color: blue;
+}
+
+#box-adicionar button{
+    width: 40%;
+    height: 30%;
+    border-radius: 5px;
+    border-width: 0px;
+    transition: 0.5s;
+    color: white;
+
+}
+
+
+#btn-confirmar{
+    background-color: rgb(139, 224, 129);
+}
+
+#btn-confirmar:hover{
+    background-color: rgb(141, 199, 134);
+}
+
+
+#btn-cancelar{
+    background-color: rgb(219, 67, 67);
+}
+
+#btn-cancelar:hover{
+    background-color: rgb(204, 49, 49);
+
+}
+
+.not{
+    padding: 2%;
+    background-color: rgb(0, 215, 0);
+    border-radius: 50%;
+    position: relative;
+    left: 5%;
+}
+
+#item-02 h3{
+    text-decoration: line-through;
+}
